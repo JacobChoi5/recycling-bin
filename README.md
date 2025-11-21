@@ -78,3 +78,24 @@ This approach mirrors real-world practices used in:
 * **getopts** for CLI parsing
 * Linux home directory structure
 
+# Demonstration
+<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/cca70499-fe0c-445b-be17-42b6eeee81f0" />
+
+1. **Initial state:**
+   The working directory contains three example files and `rbin.sh`. The recycle bin (`~/.recycle`) does not yet exist.
+
+2. **Help message:**
+   Running `./rbin.sh -h` correctly displays usage information.
+
+3. **Invalid option:**
+   Running `./rbin.sh -q` shows an error for an unknown flag and prints the usage message.
+
+4. **Sending files to recycle bin:**
+   Running `./rbin.sh example1.txt` moves the file into `~/.recycle`, automatically creating the folder.
+   Running `./rbin.sh example2.txt example3.txt` moves the remaining examples.
+
+5. **Listing recycle bin:**
+   `./rbin.sh -l` shows the files currently stored in the recycle bin.
+
+6. **Emptying the bin:**
+   `./rbin.sh -p` removes the entire `.recycle` directory, and `ls ~/.recycle` confirms it is gone.
