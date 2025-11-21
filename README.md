@@ -53,7 +53,6 @@ Show help:
 ./rbin.sh -h
 ```
 
----
 
 ## Security & Safety Considerations
 
@@ -72,13 +71,10 @@ This approach mirrors real-world practices used in:
 * Backup & recovery systems
 * User-space safe deletion utilities
 
----
-
 ## Technologies Used
 
 * **Bash**
 * **GNU Coreutils** (`mv`, `rm`, `ls`, `mkdir`)
 * **getopts** for CLI parsing
 * Linux home directory structure
----
 
