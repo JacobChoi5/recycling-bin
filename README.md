@@ -1,4 +1,4 @@
-# rbin.sh – A Linux Recycle Bin Utility
+# Linux Recycling Bin
 
 A lightweight and simple Bash-based recycle bin tool that safely manages file deletion in a Linux environment.  
 Instead of permanently deleting files with `rm`, this script moves them into a hidden `~/.recycle` directory, allowing for easy recovery and safer workflows.
